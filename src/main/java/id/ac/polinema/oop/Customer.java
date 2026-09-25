@@ -12,7 +12,7 @@ package id.ac.polinema.oop;
  */
 public class Customer {
     private String customerId;
-    private String customerName;
+    private String name;
 
     /**
      * Creates a customer and stores both parameters into the fields.
@@ -22,7 +22,7 @@ public class Customer {
      */
     public Customer(String customerId, String name) {
         this.customerId = customerId;
-        this.customerName = name;
+        this.name = name;
     }
 
     public String getCustomerId() {
@@ -30,7 +30,7 @@ public class Customer {
     }
 
     public String getName() {
-        return customerName;
+        return name;
     }
 
     /**
@@ -40,6 +40,8 @@ public class Customer {
      * @param name new name
      */
     public void setName(String name) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (name != null && !name.isBlank()) {
+            this.name = name;
+        }
     }
 }

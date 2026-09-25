@@ -41,7 +41,10 @@ public class MenuItem {
      * @param price new price in Rupiah
      */
     public void setPrice(double price) {
-        
+        if (price < 0) {
+            this.price = price;
+        }
+
         throw new UnsupportedOperationException("Not implemented yet");
     }
 }
