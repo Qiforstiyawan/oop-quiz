@@ -14,7 +14,7 @@ package id.ac.polinema.oop;
  * (all fields must be private).
  */
 public class Menu {
-
+    Menu[] menu = new Menu [10];
     /**
      * Creates an empty menu: initialize the array with capacity 10
      * and the counter with 0.
@@ -30,6 +30,7 @@ public class Menu {
      * @param item the menu item to add
      */
     public void addMenuItem(MenuItem item) {
+        
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
