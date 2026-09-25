@@ -12,7 +12,7 @@ package id.ac.polinema.oop;
  * (all fields must be private).
  */
 public class MenuItem {
-    private String itemName;
+    private String name;
     private double price;
 
     /**
@@ -22,12 +22,12 @@ public class MenuItem {
      * @param price price in Rupiah
      */
     public MenuItem(String name, double price) {
-        this.itemName = name;
+        this.name = name;
         this.price = price;
     }
 
     public String getName() {
-        return itemName;
+        return name;
     }
 
     public double getPrice() {
@@ -41,7 +41,7 @@ public class MenuItem {
      * @param price new price in Rupiah
      */
     public void setPrice(double price) {
-        if (price < 0) {
+        if (price >= 0) {
             this.price = price;
         }
     }
